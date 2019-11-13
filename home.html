@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>home</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="top"></div>
+    <div id="nag">
+        <ul>
+            <li id="hl">HTML
+                <ul>
+                    <li><a>HTML文档结构</a></li><li><a>段落标签</a></li><li><a>文字标签</a></li><li><a>图片标签</a></li><li><a>列表标签</a></li>
+                </ul>
+            </li><li>CSS
+                <ul>
+                    <li><a>CSS背景</a></li><li><a>css文本</a></li><li><a>css基础语法</a></li><li><a>css表格</a></li><li><a>css高级语法</a></li>
+                </ul>
+            </li><li>JAVASCRIPT
+                <ul>
+                    <li><a>JAVASCRIPT</a></li><li><a>段落标签</a></li><li><a>文字标签</a></li><li><a>文字标签</a></li><li><a>文字标签</a></li>
+                </ul>
+            </li><li>JQUERY
+                <ul>
+                    <li><a>JQUERY</a></li><li><a>段落标签</a></li><li><a>文字标签</a></li><li><a>文字标签</a></li><li><a>文字标签</a></li>
+                </ul>
+            </li><li>BOOTSTRAP
+                <ul>
+                    <li><a>BOOTSTRAP</a></li><li><a>段落标签</a></li><li><a>文字标签</a></li><li><a>文字标签</a></li><li><a>文字标签</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+   <div id="content">
+       <div id="left">left</div>
+       <div id="middle">middle</div>
+       <div id="right">right</div>
+   </div>
+</body>
+</html>
+<script type="text/javascript">
+    var topDiv = document.getElementById("top");
+    for (var i=1;i<25;i++){
+        var newDiv = document.createElement("div");
+        newDiv.className='rainbow';
+        switch(i%7){
+            case 1:
+                newDiv.style.backgroundColor='#FED7D7';
+                break;
+            case 2:
+                newDiv.style.backgroundColor='#FEE2CB';
+                break;
+            case 3:
+            newDiv.style.backgroundColor='#FEFA9F';
+            break;
+            case 4:
+            newDiv.style.backgroundColor='#D0FED4';
+            break;
+            case 5:
+            newDiv.style.backgroundColor='#C5FEEE';
+            break;
+            case 6:
+            newDiv.style.backgroundColor='#CED6FE';
+            break;
+            case 0:
+            newDiv.style.backgroundColor='#E7CAFE';
+            break;
+        }
+        topDiv.append(newDiv);
+    }
+
+   
+</script>
